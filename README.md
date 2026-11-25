@@ -1,5 +1,7 @@
 # Ledger Audit
 
+**Live:** https://zzevlovex.github.io/ledger-audit/
+
 A simple, free, phone-friendly audit app for a school project. It runs fully in the browser: no server, no account, no paid services. Data is saved in the browser (IndexedDB) on the computer that runs it.
 
 ## Run
@@ -10,6 +12,8 @@ npm run dev      # open the printed localhost link
 npm test         # unit tests
 npm run build    # static build in dist/
 ```
+
+Every push to `main` rebuilds and redeploys the site through GitHub Actions (`.github/workflows/deploy.yml`).
 
 First run loads a demo company (Bayanihan Trading Corp., FY2025, ~500 ledger lines with planted errors). On the Payments page, **Load sample receipts** reads the 5 sample GCash-style receipts in `public/samples/`.
 
